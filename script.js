@@ -1,5 +1,4 @@
 //your JS code here. If required.
-// Get all panels from the HTML document
 const panels = document.querySelectorAll('.panel');
 
 // Add a click event listener to each panel
