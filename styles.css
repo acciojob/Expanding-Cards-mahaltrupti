@@ -1,47 +1,49 @@
 /*  your css code here. If applicable */
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 .container {
-    display: flex;
-    width: 90vw;
+  display: flex;
+  width: 90vw;
 }
 
 .panel {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
 }
 
-.panel p {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in 0.4s;
+.panel h3.img-text {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
 }
 
 .panel.active {
-    flex: 5;
+  flex: 5;
 }
 
-.panel.active p {
-    opacity: 1;
+.panel.active h3.img-text {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
