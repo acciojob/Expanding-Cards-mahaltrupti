@@ -14,7 +14,11 @@ panels.forEach(panel => {
 
 // A helper function to remove the 'active' class from all panels
 function removeClass() {
-    panels.forEach(panel => {
-        panel.classList.remove('active');
+   panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        console.log('Clicked Panel:', panel.id); // Check which panel is clicked
+        removeClass();
+        panel.classList.add('active');
     });
+});
 }
